@@ -1,0 +1,24 @@
+#contact h1{
+	font-size:10em;
+	letter-spacing: 10px;
+	border-bottom: solid black 1px;
+}
+section .row{
+	margin:300px 0;
+}
+.first-column{
+	text-align: center;
+	font-size: 2em;
+	background-color: lightpink;
+	border-radius: 100px;
+	padding-top: 100px;
+	margin-right: 70px;
+}
+.second-column h1{
+	font-size:3em;
+	letter-spacing: 5px;
+}
+.form-control{
+	font-size: 1.7em;
+	color:#ced4da;
+}

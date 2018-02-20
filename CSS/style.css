@@ -1,0 +1,114 @@
+header img{
+	width:100%;
+	max-height:800px;
+	opacity: 0.6;
+}
+header h1, p{
+	text-align:center;
+	position:absolute;
+	left:0%;
+	width:100%;
+}
+header h1{
+	top:30%;
+	font-size:7em;
+	font-family: 'EB Garamond', serif;
+}
+header p{
+	top:42%;
+	font-size:1.7em;
+	font-family: 'Basic', sans-serif;
+}
+section{
+	margin:20px;
+}
+section img{
+	width:100%;
+}
+.first-column, .second-column{
+/*	margin:0 10px;
+*/}
+.row{
+	margin:30px;
+	display:flex;
+	flex-direction:column;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.box:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.CA3{
+	height:100%;
+}
+
+/**********  1200 media  *********/
+@media (min-width:1184px){
+	header h1, p{
+	text-align:center;
+	position:absolute;
+	left:0%;
+	width:100%;
+}
+header h1{
+	top:20%;
+	font-size:10em;
+	font-family: 'EB Garamond', serif;
+}
+header p{
+	top:45%;
+	font-size:2em;
+	font-family: 'Basic', sans-serif;
+}
+/**********  768 media  *********/
+@media (min-width:768px){	
+	.row{
+		flex-direction:row;
+	}
+	header{
+		flex-direction:row;
+	}
+/*	nav li{
+		display:inline;
+		margin-left:1em;
+	}
+	nav{
+		text-align:center;
+		padding-top:15px;
+	}*/
+}
