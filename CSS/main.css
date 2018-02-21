@@ -17,10 +17,12 @@ a, a:hover{
 h1{
     font-family: 'EB Garamond', serif;
 }
-/*.navbar-nav{
+nav{
   width:100%;
   text-align: center;
-}*/
+  
+}
+
 .navbar-light .navbar-nav .nav-link {
   color:darkred;
 }
