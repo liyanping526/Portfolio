@@ -6,7 +6,31 @@ section h1{
 section .row{
 	margin:300px 0;
 }
+section p{
+	font-size:25px;
+}
 .first-column img{
 	width:100%;
 	max-height: 600px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	section h1{
+	font-size:3em;
+	letter-spacing: 10px;
+	border-bottom: solid black 1px;
+	}
+	section .row{
+	margin:50px 0;
+	}
+	section p{
+	font-size:20px;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	section .row{
+		margin:200px 0;
+	}
 }
