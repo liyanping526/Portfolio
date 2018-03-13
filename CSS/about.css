@@ -27,6 +27,20 @@ section p{
 	font-size:20px;
 	}
 }
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+	section h1{
+		font-size:7em;
+		letter-spacing: 10px;
+		border-bottom: solid black 1px;
+	}
+	section .row{
+	margin:30px 0;
+	}
+	section p{
+	font-size:20px;
+	}
+
+}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {

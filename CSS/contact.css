@@ -11,8 +11,7 @@ section .row{
 	font-size: 2em;
 	background-color: lightpink;
 	border-radius: 100px;
-	padding-top: 150px;
-	margin-right: 70px;
+	padding: 50px;
 }
 .second-column h1{
 	font-size:3em;
@@ -25,8 +24,24 @@ form{
 	font-size: 1.7em;
 	color:#ced4da;
 }
+
+.first-column{
+	text-align: center;
+	font-size: 1.5em;
+	background-color: lightpink;
+	border-radius: 100px;
+	/* Center horizontally and vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-column p {
+	margin: 0;
+}
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
 	section h1{
 		font-size:3em;
 		letter-spacing: 10px;
@@ -53,9 +68,28 @@ form{
 	color:#ced4da;
 }
 }
-
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+	section h1{
+		font-size:7em;
+		letter-spacing: 10px;
+		border-bottom: solid black 1px;
+	}
+	section .row{
+		margin:100px 0;
+	}
+	.first-column{
+		text-align: center;
+		font-size: 1.5em;
+		background-color: lightpink;
+		border-radius: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 767px) and (max-device-width : 1024px) {
+
 	section .row{
 		margin:220px 0;
 	}
@@ -64,6 +98,8 @@ form{
 		font-size:2em;
 		letter-spacing: 2px;
 	}
+
 }
+
 
 
