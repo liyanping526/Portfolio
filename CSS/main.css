@@ -6,6 +6,7 @@ body{
     background-color:floralwhite;
     margin:0 auto;
 }
+
 a, a:hover{
   color:grey;
   text-decoration: none;
@@ -20,19 +21,34 @@ h1, h2, h5{
 p{
   font-family: 'Basic', sans-serif;
 }
-nav{
-  width:100%;
-  text-align: center;
-  
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-.navbar-light .navbar-nav .nav-link {
-  color:darkred;
+.navbar-brand img{
+  width:60px;
+  height:60px;
+  border-radius: 30px;
+}
+.bg-dark{
+    background-color: black !important;
+}
+.navbar a:hover{
+  color:grey;
+}
+ .navbar-dark .navbar-nav .nav-link {
+  color:white;
   font-family: 'Krona One', sans-serif;
 }
-nav ul{
-  font-size: 30px;
- text-align: center;  
+.navbar-dark .navbar-toggler{
+/*  background-color: white;*/
+  color:black;
+  border-color: white;
+}
+.navbar-toggler-icon{
+  color:black;
 }
 #backToTop{
   text-align: center;

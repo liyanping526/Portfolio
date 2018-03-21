@@ -13,50 +13,62 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Basic|EB+Garamond|Krona+One" rel="stylesheet">     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="IMAGE/icon.jpg">
+    <link rel="icon" type="image/png" href="IMAGE/logo.jpg">
 
   </head>
 
   <body>
   <a name="top">
 
-  <!--  page header -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="IMAGE/icon.jpg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
+<!--  page navbar -->  
+    
+      <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+<!-- Brand -->
+      <a class="navbar-brand" href="index.html"><img src="IMAGE/logo-circle.jpg"></a>
+
+<!-- Links -->
+          <div class="collapse navbar-collapse" id="nav-content">   
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#work">Work</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="About.html">About</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="Resume.html">Resume</a>
-            </li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="Contact.html">Contact</a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--  page header -->
+      <header>
+        <div id="name">
+          Yanping Li
         </div>
-      </nav>
-      <img src="IMAGE/red.jpg">
-      
-        <h1>Yanping Li</h1>
-        <p>Web Designer & Developer</p>
-      
-    </header>
+        <div id="subtitle">
+          Web Designer & Developer
+        </div>
+      </header>
 
   <!-- page content -->
-  <a name="work">
+
     <section>
       <div class="container">
-
+        <div class="row work">
+          <div id="work" class="col-md-12">WORKS</div>
+        </div>
       <!-- website -->
+
 		  <div class="title">
         <h2>Websites</h2>
       </div>
@@ -66,7 +78,7 @@
             <a href="http://mmp.bmcc.cuny.edu/yanping.li/FinalProject/index.html">            
               <img src="IMAGE/Hometown.png" alt="Avatar" class="image">
               <div class="overlay">
-                <div class="text">This is a website I design for a travel agency that include several.</div>
+                <div class="text"></div>
               </div>
             </a>
           </div>
@@ -94,13 +106,25 @@
         <div class="row">
           <div class="col-md-5 second-column CA2">
             <div class="box">
-              <a href="">            
+                          
                 <img src="IMAGE/CA2.jpg" alt="Avatar" class="image">
                 <div class="overlay">
-                  <div class="text">Poster 1</div>
+                  <div class="text">Poster design for stopping child abuse
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Learn more</button>
+                     </div>
                 </div>
-              </a>
+                   <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    This is a website I design for a travel agency that include several.
+                  </div>
+                </div>
+              </div>
             </div>
+              
+            </div>
+         
           </div>
           <div class="col-md-7 first-column">
             <div class="box " >
@@ -162,7 +186,7 @@
     <div id="backToTop" class="twelve columns"><a href="#top" class="cd-top">
       <h5>Back To Top</h5></a>
     </div>
-
+ 
     <!-- page footer -->
     <footer>
       <p>2018 by Yanping Li - Web Developer</p>
